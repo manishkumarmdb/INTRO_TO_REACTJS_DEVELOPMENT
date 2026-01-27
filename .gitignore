@@ -1,0 +1,13 @@
+node_modules/
+dist/
+.vite/
+
+.env
+.env.local
+.env.*.local
+
+*.log
+
+# Editor directories and files
+.vscode/*
+!.vscode/extensions.json
