@@ -38,6 +38,7 @@ body.split-active #root {
   padding: 2rem;
   text-align: center;
   background-color: #ffffff;
+  position: relative;
 }
 
 .app-content {
@@ -59,6 +60,39 @@ body.split-active #root {
   color: #666;
   font-size: 1.1rem;
   line-height: 1.6;
+}
+
+.app-controls {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  z-index: 100;
+}
+
+.home-btn {
+  padding: 10px 16px;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 14px;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.home-btn:hover {
+  background: linear-gradient(135deg, #5a6fd8 0%, #6a4190 100%);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+}
+
+.home-btn:active {
+  transform: translateY(0);
 }
 
 .logo {

@@ -6,7 +6,7 @@ import PremiumProducts from './components/PremiumProducts'
 import './App.css'
 
 function App() {
-  const [showReactApp, setShowReactApp] = useState(false)
+  const [showSplitView, setShowSplitView] = useState(false)
   const [selectedApp, setSelectedApp] = useState('tic_tac_toe')
 
   const handleAppSelect = (appName: string) => {
@@ -60,14 +60,14 @@ function App() {
     }
   }
 
-  if (!showReactApp) {
+  if (!showSplitView) {
     return (
       <>
         <div className='sidebar-toggle'>
           <h2>Welcome to My Vite + React App!</h2>
           <p>This is a simple application to demonstrate Vite with React.</p>
-          <button onClick={() => setShowReactApp(!showReactApp)}>
-            {showReactApp ? 'Hide' : 'Show'} React Apps
+          <button onClick={() => setShowSplitView(!showSplitView)}>
+            {showSplitView ? 'Hide' : 'Show'} React Apps
           </button>
         </div>
         <div>
@@ -95,11 +95,9 @@ function App() {
         <Sidebar onAppSelect={handleAppSelect} selectedApp={selectedApp} />
       </div>
       <div className="right-container">
-        <div className='sidebar-toggle'>
-          <h2>Welcome to My Vite + React App!</h2>
-          <p>This is a simple application to demonstrate Vite with React.</p>
-          <button onClick={() => setShowReactApp(!showReactApp)}>
-            {showReactApp ? 'Hide' : 'Show'} React Apps
+        <div className='app-controls'>
+          <button className="home-btn" onClick={() => setShowSplitView(false)}>
+            🏠 Home
           </button>
         </div>
         {renderAppContent()}
