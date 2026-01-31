@@ -1,4 +1,4 @@
-# Intro to React Apps Development 🚀 (React + TypeScript + Vite)
+# 🚀 Intro to React Apps Development (React + TypeScript + Vite)
 
 This repository is a **React.js practice project** created to learn and strengthen React fundamentals using **Vite + TypeScript**.  
 The project consists of multiple small applications demonstrating real-world React concepts such as component-based architecture, props, state management, conditional rendering, API integration, and filtering logic.
