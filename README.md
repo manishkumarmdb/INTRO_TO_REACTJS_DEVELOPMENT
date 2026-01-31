@@ -1,73 +1,153 @@
-# React + TypeScript + Vite
+# Intro to React Apps Development 🚀 (React + TypeScript + Vite)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This repository is a **React.js practice project** created to learn and strengthen React fundamentals using **Vite + TypeScript**.  
+The project consists of multiple small applications demonstrating real-world React concepts such as component-based architecture, props, state management, conditional rendering, API integration, and filtering logic.
 
-Currently, two official plugins are available:
+Some applications are already implemented, while others are planned and will be added incrementally.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
 
-## React Compiler
+## 🧠 What You Will Learn
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+By exploring this repo, you will:
 
-## Expanding the ESLint configuration
+- Understand the basics of React and component-based architecture
+- Learn how to structure a React application
+- Use functional components, JSX, and props
+- Manage state using React hooks (`useState`, `useEffect`)
+- Build, run, and debug a React app locally
+- Get hands-on experience with routing and basic UI logic
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+---
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+## 🗂️ Project Structure
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+```text
+INTRO_TO_REACTJS_DEVELOPMENT
+├── node_modules
+├── public
+│   └── vite.svg
+├── src
+│   ├── assets
+│   │   └── react.svg
+│   ├── components
+│   │   ├── PremiumProducts.css
+│   │   ├── PremiumProducts.tsx
+│   │   ├── Sidebar.css
+│   │   └── Sidebar.tsx
+│   ├── App.css
+│   ├── App.tsx
+│   ├── index.css
+│   └── main.tsx
+├── .gitignore
+├── eslint.config.js
+├── index.html
+├── package-lock.json
+├── package.json
+├── README.md
+├── tsconfig.app.json
+├── tsconfig.json
+├── tsconfig.node.json
+└── vite.config.ts
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+## 💻 Local Development Setup
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+### 🔹 Environment (Built & Tested On)
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+- **Node.js:** v25.2.1
+- **npm:** 11.8.0
+- **OS:** macOS (also works on Windows & Linux)
+
+---
+
+### 🔹 Setup & Run Commands
+
+Clone the repository:
+```bash
+git clone https://github.com/manishkumarmdb/INTRO_TO_REACTJS_DEVELOPMENT.git
 ```
+
+Navigate to the project directory:
+```bash
+cd INTRO_TO_REACTJS_DEVELOPMENT
+```
+
+Install dependencies:
+```bash
+npm install
+```
+
+Start the development server:
+```bash
+npm run dev
+```
+
+The application will be available at:
+```text
+http://localhost:5173
+```
+
+---
+
+## 📱 Applications in This Project
+
+This project consists of multiple small React applications created to practice and understand core React concepts.
+
+---
+
+## ✅ Implemented Applications
+
+### **Premium Products**
+- Fetches product data from a public API
+- Displays only **premium products** based on the following conditions:
+  - ⭐ Product rating greater than **4.0**
+  - 📦 Product quantity greater than **100**
+- Demonstrates:
+  - API integration using `fetch`
+  - Data filtering and transformation
+  - Conditional rendering
+  - Component-based architecture
+
+---
+
+## 🚧 Planned / Upcoming Applications
+
+The following applications are planned and will be implemented as part of continued learning and practice:
+
+### **To-Do App**
+- Create, update, and delete tasks
+- Learn state management and event handling
+- Implement controlled components and form handling
+
+### **Tic-Tac-Toe**
+- Classic two-player game
+- Implement game logic and winner detection
+- Practice component reuse and interaction handling
+
+### **Series Finder**
+- Search TV series using a public API
+- Display dynamic search results
+- Implement API integration and conditional rendering
+
+---
+
+## 🎯 Learning Outcomes
+
+By working on this project, you will learn and practice the following concepts:
+
+- React functional components and JSX
+- Component-based architecture
+- Props and state management
+- Handling user events in React
+- Conditional rendering techniques
+- Reusable component design
+- Fetching data from public APIs
+- Filtering and transforming API responses
+- TypeScript integration with React
+- Vite-based project setup and development workflow
+- Organizing and structuring a React project
+- Debugging and improving React applications
+
+---
