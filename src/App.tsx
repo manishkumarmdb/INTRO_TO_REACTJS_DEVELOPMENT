@@ -2,8 +2,9 @@ import { useState } from 'react'
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import Sidebar from './components/Sidebar'
-import PremiumProducts from './components/PremiumProducts'
+import PremiumProducts from './apps/premium_products/PremiumProducts'
 import './App.css'
+import TicTacToe from './apps/tic_tac_toe/TicTacToe'
 
 function App() {
   const [showSplitView, setShowSplitView] = useState(false)
@@ -16,16 +17,7 @@ function App() {
   const renderAppContent = () => {
     switch (selectedApp) {
       case 'tic_tac_toe':
-        return (
-          <div className="app-content">
-            <h2>Tic-Tac-Toe Game</h2>
-            <p>Play the classic Tic-Tac-Toe game!</p>
-            <div className="game-board">
-              {/* Tic-Tac-Toe board will go here */}
-              <p>Game board coming soon...</p>
-            </div>
-          </div>
-        )
+        return <TicTacToe />
       case 'todo':
         return (
           <div className="app-content">
