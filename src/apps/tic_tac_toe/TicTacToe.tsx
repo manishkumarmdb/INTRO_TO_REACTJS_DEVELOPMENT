@@ -1,3 +1,4 @@
+import Square from './Square';
 import './TicTacToe.css'
 
 function TicTacToe() {
@@ -9,21 +10,21 @@ function TicTacToe() {
     <button className="start-btn">Start Game</button>
     <div className="game-board" >
       {/* Tic-Tac-Toe board will go here */}
-      <button className="square">X</button>
-      <button className="square">X</button>
-      <button className="square">X</button>
+      <Square value="" onClick={() => alert('Square clicked!')} />
+      <Square value="" onClick={() => alert('Square clicked!')} />
+      <Square value="" onClick={() => alert('Square clicked!')} />
     </div>
     <div className="game-board" >
       {/* Tic-Tac-Toe board will go here */}
-      <button className="square">X</button>
-      <button className="square">X</button>
-      <button className="square">X</button>
+      <Square value="" onClick={() => alert('Square clicked!')} />
+      <Square value="" onClick={() => alert('Square clicked!')} />
+      <Square value="" onClick={() => alert('Square clicked!')} />
     </div>
     <div className="game-board" >
       {/* Tic-Tac-Toe board will go here */}
-      <button className="square">X</button>
-      <button className="square">X</button>
-      <button className="square">X</button>
+      <Square value="" onClick={() => alert('Square clicked!')} />
+      <Square value="" onClick={() => alert('Square clicked!')} />
+      <Square value="" onClick={() => alert('Square clicked!')} />
     </div>
     </div>
   )
