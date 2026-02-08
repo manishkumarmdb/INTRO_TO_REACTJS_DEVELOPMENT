@@ -20,38 +20,6 @@ By exploring this repo, you will:
 
 ---
 
-## 🗂️ Project Structure
-
-```text
-INTRO_TO_REACTJS_DEVELOPMENT
-├── node_modules
-├── public
-│   └── vite.svg
-├── src
-│   ├── assets
-│   │   └── react.svg
-│   ├── components
-│   │   ├── PremiumProducts.css
-│   │   ├── PremiumProducts.tsx
-│   │   ├── Sidebar.css
-│   │   └── Sidebar.tsx
-│   ├── App.css
-│   ├── App.tsx
-│   ├── index.css
-│   └── main.tsx
-├── .gitignore
-├── eslint.config.js
-├── index.html
-├── package-lock.json
-├── package.json
-├── README.md
-├── tsconfig.app.json
-├── tsconfig.json
-├── tsconfig.node.json
-└── vite.config.ts
-
-```
-
 ## 💻 Local Development Setup
 
 ### 🔹 Environment (Built & Tested On)
@@ -99,6 +67,12 @@ This project consists of multiple small React applications created to practice a
 
 ## ✅ Implemented Applications
 
+### **Tic-Tac-Toe**
+- Classic two-player game
+- Implement game logic and winner detection
+- Practice component reuse and interaction handling
+
+
 ### **Premium Products**
 - Fetches product data from a public API
 - Displays only **premium products** based on the following conditions:
@@ -120,11 +94,6 @@ The following applications are planned and will be implemented as part of contin
 - Create, update, and delete tasks
 - Learn state management and event handling
 - Implement controlled components and form handling
-
-### **Tic-Tac-Toe**
-- Classic two-player game
-- Implement game logic and winner detection
-- Practice component reuse and interaction handling
 
 ### **Series Finder**
 - Search TV series using a public API
