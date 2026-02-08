@@ -60,10 +60,14 @@ function Board() {
      </div>
       <div className="game-info">
         {/* Game status and winner info */}
-        <p> {status} </p>
+        <p className="status"> {status} </p>
+        { status.startsWith('Winner') && 
+            <p className="winner">Congratulations! Player {winner} wins!</p>
+        }
      </div>
      </div>
    )
  }
  
  export default Board;
+ 

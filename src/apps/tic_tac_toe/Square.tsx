@@ -1,9 +1,4 @@
-import type { SquareValue } from "./types/game";
-
-type SquareProps = {
-  value: SquareValue;
-  onClickSquare: () => void;
-};
+import type { SquareProps } from './types/game';
 
 function Square({ value, onClickSquare }: SquareProps) {
   return (
