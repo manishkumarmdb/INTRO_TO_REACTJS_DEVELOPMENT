@@ -1,7 +1,7 @@
-function Square (props: { value: string; onClick: () => void }) {
+function Square({ value, onClickSquare }) {
   return (
-    <button className="square" onClick={props.onClick}>
-      {props.value}
+    <button className="square" onClick={onClickSquare}>
+      {value}
     </button>
   );
 }
