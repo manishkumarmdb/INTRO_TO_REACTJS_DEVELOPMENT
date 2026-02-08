@@ -58,7 +58,7 @@ function App() {
         <div className='sidebar-toggle'>
           <h2>Welcome to My Vite + React App!</h2>
           <p>This is a simple application to demonstrate Vite with React.</p>
-          <button onClick={() => setShowSplitView(!showSplitView)}>
+          <button className='show-button' onClick={() => setShowSplitView(!showSplitView)}>
             {showSplitView ? 'Hide' : 'Show'} React Apps
           </button>
         </div>

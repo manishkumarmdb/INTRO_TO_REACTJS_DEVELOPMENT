@@ -30,6 +30,7 @@ function Board() {
     const status = winner ? `Winner: ${winner}` : `Next player: ${isXNext ? 'X' : '0'}`;
 
     const handleSquareClick = (index: number) => {
+      console.log(`Square ${index} clicked!`);
       if (squares[index] || calculateWinner(squares)) {
         return; // Ignore click if square is already filled or if there's a winner
       }
@@ -44,27 +45,31 @@ function Board() {
       setIsXNext(true);
     }
 
+    const startGame = () => {
+      resetGame();
+    }
+
    return (
      <div className="board">
-     <button className="reset-btn" onClick={resetGame} >Reset Game</button> nbsp;
-     <button className="start-btn">Start Game</button>
-     <div className="game-board" >
-       {/* Tic-Tac-Toe board will go here */}
-        {squares.map((value, index) => (
-            <Square
-            key={index}
-            value={value}
-            onClickSquare={() => handleSquareClick(index)}
-            />
-        ))}
-     </div>
-      <div className="game-info">
-        {/* Game status and winner info */}
-        <p className="status"> {status} </p>
-        { status.startsWith('Winner') && 
-            <p className="winner">Congratulations! Player {winner} wins!</p>
-        }
-     </div>
+       <button className="reset-btn" onClick={resetGame} >Reset Game</button> nbsp;
+       <button className="start-btn" onClick={startGame} >Start Game</button>
+       <div className="game-board" >
+         {/* Tic-Tac-Toe board will go here */}
+         {squares.map((value, index) => (
+           <Square
+             key={index}
+             value={value}
+             onClickSquare={() => handleSquareClick(index)}
+           />
+         ))}
+       </div>
+       <div className="game-info">
+         {/* Game status and winner info */}
+         <p className="status"> {status} </p>
+         { status.startsWith('Winner') && 
+           <p className="winner">Congratulations! Player {winner} wins!</p>
+         }
+       </div>
      </div>
    )
  }
